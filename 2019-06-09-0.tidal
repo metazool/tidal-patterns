@@ -1,0 +1,11 @@
+d1 $ sound "bd:20 ~ ~ [~ bd:10 [~ bd:10]]"
+
+d4 $ sound "bd:20 [~ bd:20] ~ bd:20" # vowel "a o e e"
+
+d2 $ sound " ~ ~ ~ [drum ~ ~ drum]" # vowel "a o e e"
+
+d3 $ cat [silence, "bass3", "bass3:3"]
+
+d5 $ sound "linnhats"
+
+d5 silence

@@ -1,0 +1,7 @@
+bd:2 - flat sound
+bd:4 - more tapping sounda
+bd:6 - more of a thud
+bd:10 bd:12 - flat thud (12 is lower, 13 less resonance))
+bd:18 - deep bounce - 19 ismilar but flatter - 20 too but more firm
+808[1-4] - like soft tapping pops
+bass3 - deep resonant basses

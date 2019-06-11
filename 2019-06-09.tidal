@@ -1,0 +1,10 @@
+d2 $ almostNever (# speed 2) $ sound "~ ~ ~ [bass1:5 bass1:5]"
+
+d1 $ almostNever (# speed 0.5) $ sound "~ ~ bass1:5 ~"
+
+d3 $ sound "[[bd:2 bd:2] bd:2] bd [~ ~ bd:3 bd:3] bd"
+
+d4 $ sound "[bd:6 ~ ~ ~]"
+
+
+hush
