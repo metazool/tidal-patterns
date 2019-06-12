@@ -1,30 +1,32 @@
-connect jack to ffmpeg
+run jack
 
- * ffmpeg -f jack -i ffmpeg -y out.wav
+ * jackd -R -d alsa -r 44100 -P
 
-send superdirt output to jack
+send superdirt output to jack (after starting ffmpeg)
 
  * jack_connect SuperCollider:out_2 ffmpeg:input_1
 
-send _all_ of :0.0 / :hw:0 (not what we want) to twitch via ffmpeg:
+streaming via ffmpeg
 
 ```
 streaming() {
-     INRES="1024*748" # input resolution
-     OUTRES="1024*768" # output resolution
-     FPS="15" # target FPS
-     GOP="30" # i-frame interval, should be double of FPS, 
-     GOPMIN="15" # min i-frame interval, should be equal to fps, 
-     THREADS="2" # max 6
+     INRES="1440*900" # input resolution
+     OUTRES="640*480" # output resolution
+     FPS="10" # target FPS
+     GOP="20" # i-frame interval, should be double of FPS, 
+     GOPMIN="10" # min i-frame interval, should be equal to fps, 
+     THREADS="4" # max 6
      CBR="1000k" # constant bitrate (should be between 1000k - 3000k)
      QUALITY="ultrafast"  # one of the many FFMPEG preset
      AUDIO_RATE="44100"
-     STREAM_KEY="$1" # use the terminal command Streaming streamkeyhere to stream your video to twitch or justin
-     SERVER="live-sjc" # twitch server in California, see http://bashtech.net/twitch/ingest.php to change 
-     
-                ffmpeg -f x11grab -s "$INRES" -r "$FPS" -i :0.0 -f alsa -i hw:0 -f flv -ac 2 -ar $AUDIO_RATE \
-              -vcodec libx264 -g $GOP -keyint_min $GOPMIN -b:v $CBR -minrate $CBR -maxrate $CBR -pix_fmt yuv420p\
-              -s $OUTRES -preset $QUALITY -tune film -acodec libmp3lame -threads $THREADS -strict normal \
-               -bufsize $CBR "rtmp://$SERVER.twitch.tv/app/$STREAM_KEY"
+     STREAM_KEY=$STREAM_KEY # Twitch stream key
+     SERVER="live-lhr" # twitch server in London, see http://bashtech.net/twitch/ingest.php to change 
+
+
+	 ffmpeg -f x11grab -s "$INRES" -r "$FPS" -i :0.0 -f jack -i ffmpeg -f flv -ac 2 -ar $AUDIO_RATE \
+	  -vcodec libx264 -g $GOP -keyint_min $GOPMIN -b:v $CBR -minrate $CBR -maxrate $CBR -pix_fmt yuv420p\
+	  -s $OUTRES -preset $QUALITY -tune film -acodec aac -threads $THREADS -strict normal \
+	   -bufsize $CBR "rtmp://$SERVER.twitch.tv/app/$STREAM_KEY" 
 }
 ```
+

@@ -1,0 +1,15 @@
+
+
+d1 $ sound "bd:18 ~ ~ [~ bd:18 bd ~ ]"
+
+d2 $ sound "bass3*1" # n (irand 4)
+
+d3 $ sound"[~ ~ 808:6 ~][~ [808:6 ~]][~ 808:6 ~][~ 808:6 ~]"
+ 
+d4 $ sound "bd:10 ~  ~ bd:10"
+
+d3 $ silence
+
+hush
+
+
