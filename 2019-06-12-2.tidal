@@ -1,0 +1,14 @@
+
+d2 $ every 4 (linger 0.375) $ stack [ ghost $ sound (slow 2 "bass3") # vowel "u", sound "bass3" # vowel "u"  ]
+
+d3 $ stack [ ghost $ sound (fast 2 "~ bd:10"), sound "bd:20"]
+
+d4 $ linger 0.25 $ ghost $ sound (slow 2 "tabla:1")
+
+d6 $ every 3 (linger 0.5) $ sound "[gretsch gretsch:13] ~ ~ ~" 
+
+d7 $ sound "~~~[~gretsch:12]"
+
+d5 $ linger 0.75 $ sound (slow 4 "moog:1")
+
+

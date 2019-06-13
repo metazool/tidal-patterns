@@ -1,0 +1,22 @@
+
+d4 $ linger 0.25 $ sound (slow 2 "tabla:1")
+
+d2 $ every 3 (linger 0.5) $ sound "[gretsch gretsch:13] ~ ~ ~" 
+
+d7 $ stack [ sound (slow 2 "~~~[~ gretsch]"), sound "~~~[~gretsch:13]"]
+
+d5 $ sound ("tabla:1")
+
+d2 $ degrade $ every 3 (linger 0.5) $ sound (slow 2 "tabla:1 ~ ~ ")
+
+d3 $ every 3 rev $ sound ("gretsch ~ [~gretsch] ~")
+
+d1 $ every 3 ghost $ sound (slow 3 "sitar:6")
+
+d4 $ every 2 ghost $ sound "bass3 bd"
+
+d5 $ every 3 rev $ sound "hh [~hh ~hh] ~~"
+
+d4 $ silence 
+
+hush

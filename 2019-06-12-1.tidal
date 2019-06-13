@@ -1,0 +1,5 @@
+
+d2 $ every 4 (linger 0.375) $ stack [ ghost $ sound "bass3" # vowel "u", sound "bass3:3" # vowel "u" ]
+
+d3 $ stack [ ghost $ sound (fast 2 "~ bd:20"), sound "bd"]
+
