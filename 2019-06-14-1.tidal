@@ -1,0 +1,11 @@
+d1 $ sound "bd?" |+| n "18 [~ 19][~ 20] ~ "
+
+d3 $ jux rev $ sound "bd" |+| n "18 [~ 19?][~ 20] ~ " # vowel "o o e" # speed 0.5
+
+d5 $ off 0.25 (# vowel "o o e") $ sound "bd" |+| n "18 [~ 19][~ 20] ~ " # vowel "o o e" # speed 0.5
+
+d2 $ silence
+
+d2 $ sound "bass3:3? [~ bass3:3] bass3:3 ~" # speed 0.5
+
+hush
