@@ -1,0 +1,18 @@
+
+d3 $ weaveWith 2 (sound "bd:20 [~bd:20] bd:20?")
+	[(# speed 0.5),
+	fast 2,
+    (# vowel "o e o") 
+	] 
+
+d2 $ sound "bass3:3 [~ bass3] ~?" # speed 0.5 # shape "0.1, 0.2"
+
+d1 $ sound "~~~[~~bass3?]" # speed 0.5 
+
+d4 $ every 3 rev $ sound "~ gretsch:3" # speed 0.5
+
+d3 $ silence
+
+hush
+
+
