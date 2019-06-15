@@ -1,0 +1,7 @@
+d1 $ n "a1" # s "supersaw" # vowel (choose ["o", "e"]) #  legato 2 # pan (slow 4 $ sine) 
+
+d2 $ sound "~ [~bd:18] [~bd:20] ~" # speed 0.5
+
+d4 $ jux rev $ off 0.25 (# vowel "o e") $ sound (fast (choose [2,0.5]) "bd:6 ~ ~ bd:6?") # speed 0.5
+
+d1 $ silence
