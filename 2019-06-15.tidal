@@ -1,0 +1,6 @@
+d1 $ n "d2 f2" # s "supersaw" #  legato 1.5 # vowel (choose ["o", "e"])
+
+d2 $ jux rev $ n (fast (choose [2, 1]) "a2 ~ [~ a1] ~") # s "superhex"
+
+
+
