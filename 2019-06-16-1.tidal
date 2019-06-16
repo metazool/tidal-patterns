@@ -1,0 +1,17 @@
+d1 $ n "a2 g2 a2 ~" # s "superhex" # legato 2 # gain 0.8
+
+d2 $ s "bd" |+| n "~~[~6]8~" # speed 0.5
+
+d6 $ s "bd" |+| n "~20~~"# speed 0.5
+
+d4 $ s "~~[bd:18 [~bd:18]]~" # shape "0.6, 0.8" # speed 0.5 # vowel "o u"
+
+d2 $ s "hh hh hh ~"
+
+d7 $ silence
+
+d3 $ every 3 (linger 0.25) $ n "[~ a4] d4 [g4] " # s "superhex" # gain 0.65
+
+d8 $ n "g2" # s "supersaw" # sustain 4 # shape (slow 32 $ sine * 0.2) 
+
+hush
