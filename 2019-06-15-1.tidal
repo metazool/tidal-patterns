@@ -1,0 +1,17 @@
+d1 $ n "d2, f2" # s "supersaw" #  legato 2 
+
+d2 $ n (fast (choose [2, 1]) "a2 ~ [~ a1] ~") # s "superhex"
+
+d3 $ sound "bd" |+| n (fast (choose [2,1]) "[~6] [~ 18 ] [~ 20] 20") # vowel "o o o e" 
+
+d4 $ every 3 rev $ sound "bd" |+| n (fast (choose [2,2,1]) "8 8 [~8?] ~")
+
+d5 $ sound "bd" |+| n "20 20? 18 20?" 
+
+
+d1 $silence
+
+hush
+
+
+

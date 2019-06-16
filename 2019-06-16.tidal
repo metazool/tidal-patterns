@@ -1,0 +1,14 @@
+d1 $ n "a2 [a2 a2] ~ " # s "superhex" # legato 2 # gain 0.8
+
+d2 $ s "bd" |+| n (fast (choose [2, 2, 0.5]) "~ 18 [~20]~") # speed 0.5 # shape "0.2, 0.4" # vowel "o e"
+
+d4 $ jux rev $ s "~~bd:18 [~bd:18]" # shape "0.2, 0.4" # vowel "o e"
+
+d5 $ s "cosmicg" # gain 0.3 # vowel (choose ["o", "e"]) # pan (slow 16 sine)
+
+d5 $ silence
+
+d3 $ n "[~ a4] d4 [g4] " # s "superhex" # gain 0.5
+
+
+hush
