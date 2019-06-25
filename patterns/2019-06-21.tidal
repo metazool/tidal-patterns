@@ -1,0 +1,9 @@
+d1 $ n "c4 d4 af3 c4 c4 af3 g3 [f3 ~]" # s "supersaw" # gain (slow 16 sine / 1.5) # velocity "[1.20 0.9 0.8 1]"
+
+d2 $ n "c2" # s "supersaw" # gain 0.75 # legato 2
+
+d5 $  n "a5 fs5 f5 as5" # s "supersaw" # vowel "o o o o" # gain (slow 12 sine / 1.5)
+
+d5 $silence 
+
+hush
