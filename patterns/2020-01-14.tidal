@@ -1,0 +1,11 @@
+d1 $ sometimes (# vowel "a") $ sound "~ bass3" # speed 0.5
+
+d4 $ sound "~ ~ bass3 bass3?" # speed 0.5
+
+d2 $ sometimes (# vowel "a u") $ sound "~ ~ hh ~ hh ~"
+
+d3 $ almostAlways (# speed 2) $ sound "~ ~ [~ hh] ~ ~ hh" # vowel "a" 
+
+d6 $ someCycles (# vowel "u") $ sound "~ ~ ~ [hh? hh?] ~ ~"
+
+d5 $ almostAlways (# vowel "a") $ degrade $ sound "~ [hh hh] ~ ~ ~ [hh hh]" 
