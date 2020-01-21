@@ -1,11 +1,13 @@
-d1 $ sound "~  jvbass:4 ~ ~" # speed 0.5 # legato 2
+d1 $ sound "~ jungbass:4 ~ ~" # speed 0.5
 
-d2 $ sound "~ [~ jungbass] ~ jvbass:4?" # speed 0.5
+d2 $ sound "~ [~ jungbass] ~ jungbass?" # speed 0.5
 
 d3 $ fast 2 (sound "~ [~ jungbass?] ~ jungbass") # speed 0.8
 
-d4 $ sometimes (# vowel "e") $ sound "~ [~ hh?] ~ [~ hh]" 
+d4 $ someCycles (# vowel "e") $ sound "~ [~ hh?] ~ [~ hh]" 
 
-d5 $ sometimes (# speed 0.5) $ sound "~ jungle:4? ~ ~" # legato 0.5 
+d5 $ jux rev $ sound "~ [jungle:4 ~] ~ ~" # legato 0.5 # speed (choose [0.5, 0.2]) 
 
-d6 $ sound "gabba:3" # gain (slow 16 sine / 1.5)
+d6 $ sound "jungle:6" # gain (slow 16 sine) # speed 0.5 
+
+d7 $ sound "[~ pebbles?]" # gain 0.5 # legato 4 
