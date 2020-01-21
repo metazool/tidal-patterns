@@ -1,0 +1,11 @@
+d1 $ sound "~  jvbass:4 ~ ~" # speed 0.5 # legato 2
+
+d2 $ sound "~ [~ jungbass] ~ jvbass:4?" # speed 0.5
+
+d3 $ fast 2 (sound "~ [~ jungbass?] ~ jungbass")
+
+d4 $ sometimes (# vowel "e") $ sound "~ [~ hh?] ~ [~ hh]" 
+
+d5 $ sound "~ tacscan:2? ~ ~" # speed 0.2 
+
+
