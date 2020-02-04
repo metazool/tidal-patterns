@@ -1,0 +1,13 @@
+d1 $ n "[~ a3] g2 a2 ~" # s "supersaw" # vowel (choose ["o", "e"]) # gain 0.8
+
+d4 $ n "~ ~ [~ a4] [g3 a3]" # s "supersaw" # gain 0.8 
+
+d2 $ sound "hh? hh ~ ~"
+
+d3 $ sound "~ ~ [hh hh hh ~] ~" 
+
+d5 $ n "~ b4?" # s "supersaw" # leslie 2.7 # gain 0.6 # legato 2
+
+hush
+
+d5 $ silence
