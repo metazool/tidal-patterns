@@ -1,0 +1,13 @@
+d1 $ off 0.25 (jux rev) $ jux rev $ sound "~ bass3:3*3" # gain 0.8
+
+d2 $ off 0.5 (jux rev) $ jux rev $ sound "bass3:3*3 ~" # legato (choose([0.5, 1.5])) # gain 0.8
+
+d3 $ off 0.25 (jux rev) $ jux rev $ sound "808:4*2 ~ 808:44*2"
+
+d4 $ off 0.25 (jux rev) $ jux rev $ sound "808:3*3 ~*2 808:3*2 ~"
+
+d7 $ off 0.25 (jux rev) $ jux rev $ sound "sheffield" # cut (-1) 
+
+d1 $ silence 
+
+hush
