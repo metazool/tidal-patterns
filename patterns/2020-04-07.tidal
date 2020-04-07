@@ -1,0 +1,7 @@
+d1 $ euclid 5 8 $ "bd" # n "3" # vowel "o" # pan (slow 8 sine)  
+
+d2 $ sound "bd*8" # pan (slow 12 sine) 
+
+d3 $ sound "bd*5" # pan (slow 4 sine)  
+
+hush
